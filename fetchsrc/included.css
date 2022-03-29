@@ -1,0 +1,60 @@
+.cfs-logo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1em;
+    width: 60px;
+    height: 60px;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    padding: 10px;
+    box-shadow: 5px 6px 35px 1px rgba(0,0,0,0.46);
+    background: linear-gradient(270deg, #1470f0, #fd9e00);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.cfs-icon {
+    background: url("code.png") center center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cfs-logo:hover .cfs-icon {
+    transform: rotate3d(1, 0, 0, 10);
+  }
+
+.cfs-icon A{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.cfs-info {
+    display: none;
+}
