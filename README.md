@@ -8,4 +8,11 @@ The Javascript file will fetch data from the web server and turn that into text 
 
 The injected HTML uses its own CSS for design, placement and some CSS animation. It also presents a link that can be clicked and opens oin a new window.
 
+The injection in the index.html looks like this:
+```html
+<body>
+    <div id="demoShow"></div>
+    <script src="../fetchsrc/fetchdemo.js"></script>
+</body>
+```
 ![Screenshot of the injected HTML and CSS](/screenshot_inject_html.PNG)
