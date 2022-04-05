@@ -16,3 +16,11 @@ The injection in the index.html looks like this:
 </body>
 ```
 ![Screenshot of the injected HTML and CSS](/screenshot_inject_html.PNG)
+
+## CORS
+If you want to host your injection code on your server and want to give it away to clients or friends they need to enable CORS on their web servers so that the Access-Control-Allow-Origin directive is sent in the HTTP headers.
+If you are hosting on foo.com, they need to add a definition like
+```
+Header add Access-Control-Allow-Origin "foo.com";
+```
+to their configuration, either in the .htaccess, the Apache configuration or a virtual host configuration.
