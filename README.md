@@ -6,7 +6,7 @@ We want to inject new HTML elements into our DOM by using javascript and fetchin
 
 The Javascript file will fetch data from the web server, turn that into text and inject this as the innerHTML of a specified DOM element. It also fetches CSS text and adds that as a new style node to the HEAD element.
 
-The injected HTML uses its own CSS for design, placement and some CSS animation. It also presents a link that can be clicked and opens oin a new window. The example is designed to live underneath the body element.
+The injected HTML uses its own CSS for design, placement and some CSS animation. It also presents a link that can be clicked and opens oin a new window. The example is designed to live underneath the node with the id *demoShow*.
 
 The injection in the index.html looks like this:
 ```html
